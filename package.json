@@ -1,0 +1,14 @@
+{
+  "name": "node_sass_practice",
+  "version": "1.0.0",
+  "description": "scss test",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/test.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

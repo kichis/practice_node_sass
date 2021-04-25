@@ -1,0 +1,33 @@
+.test {
+  color: aqua; }
+  .test .title {
+    color: pink; }
+  .test button {
+    background-color: blue; }
+    .test button:hover {
+      background-color: white; }
+
+.test2 h2 {
+  color: red; }
+
+.test3 #hoge {
+  color: skyblue; }
+
+.card1 p {
+  color: #30aadc; }
+
+.card1 button {
+  color: greenyellow; }
+  .card1 button:hover {
+    width: 100px; }
+
+.card2 p {
+  color: #999900; }
+
+.card2 button {
+  color: greenyellow; }
+  .card2 button:hover {
+    width: 100px; }
+
+.card3 button {
+  color: khaki; }

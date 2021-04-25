@@ -1,0 +1,69 @@
+// 外部scssファイルの読み込み
+@import"variables";
+
+// 変数
+$sky: skyblue;
+
+.test{
+    color: aqua;
+    // 入れ子構造
+    .title{
+        color: pink;
+    }
+    button{
+        background-color: blue;
+        // &(=この{}の対象要素) を表す
+        &:hover{
+            background-color:white;
+        }
+    }
+}
+
+// 通常のcssの書き方も可能
+.test2 h2{
+    color: red;
+}
+
+.test3{
+    #hoge{
+        color: $sky;
+    }
+}
+
+// スタイルセットを登録する
+// 引数も渡せる
+@mixin card($color){
+    p{
+        // 関数
+        color: darken($color, 20%);
+    }
+    button{
+        color: greenyellow;
+        &:hover{
+            width: 100px;
+        }
+    }
+}
+
+.card1{
+    @include card($sky);
+}
+.card2{
+    @include card($pp);
+}
+
+// 条件分岐
+$num: 2;
+.card3{
+    button{
+        @if $num < 2 {
+            color: indigo;
+        }
+        @else if $num >= 2 {
+            color: khaki;
+        }
+        @else {
+            color: brown;
+        }
+    }
+}
