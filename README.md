@@ -1,4 +1,4 @@
-# Sass(scssの練習) node-sass
+# Sass(scss)の練習 node-sass
 scss of node-sass
 
 ## 環境構築
